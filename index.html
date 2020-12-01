@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website - A Film - Godfather</title>
+    <link rel="stylesheet" href="css/layout.css">
+
+    <style>
+        /* -----header part start----- */
+        #banner {
+            width: 100%;
+            height: calc(100vh - 180px);
+            background-color: rgb(0, 0, 0);
+            background-image: url("img/banner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #bar {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .barBox {
+            width: 20%;
+            height: 100%;
+            margin: 10px;
+            background-color: rgb(0, 0, 0);
+            background-image: url("img/bar.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* -----header part end----- */
+
+        /* -----main part start----- */
+
+        /* --section 1 start-- */
+
+        #section1 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(128, 128, 128, 0);
+            position: relative;
+        }
+
+        #bg-photo {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("img/bg-img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: 0.8s;
+            filter: grayscale(1);
+        }
+
+        #bg-photo:hover {
+            filter: grayscale(0);
+        }
+
+        #section1 .container .wrap {
+            width: 100%;
+            height: 75vh;
+            background-color: rgba(128, 119, 46, 0);
+        }
+
+        #section1 .container .wrap .box1 {
+            width: 100%;
+            height: 25%;
+            background-color: rgba(240, 230, 140, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+        #section1 .container .wrap .box2 {
+            width: 100%;
+            height: 75%;
+            background-color: rgba(59, 57, 40, 0);
+            padding: 0 200px;
+        }
+
+        #section1 .container .wrap .box2 p {
+            color: white;
+            font-size: 18px;
+        }
+
+        #section1 .container .wrap .box3 {
+            width: 60%;
+            height: 50%;
+            background-color: rgba(216, 193, 20, 0);
+        }
+
+        #section1 .container .wrap .box3 h1 {
+            color: white;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* --section 1 end-- */
+
+        /* --section 2 start-- */
+        #section2 {
+            width: 100%;
+            height: 100vh;
+            background-color: #d0bf9c;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+        }
+
+        #section2 .container .wrap {
+            width: 100%;
+            height: 50vh;
+            background-color: #d0bf9c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #section2 .container .wrap .box1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #section2 .container .wrap .box1.theme-1 {
+            background-color: rgb(110, 16, 110);
+            background-image: url("img/Francis-Ford-Coppola.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: 0.4s;
+        }
+
+        #section2 .container .wrap .box1.theme-1:hover {
+            background-image: url("img/coppola-2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #section2 .container .wrap .box1.theme-2 {
+            background-color: #d0bf9c;
+        }
+
+        #section2 .container .wrap .box2 {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #section2 .container .wrap .box3 {
+            width: 50%;
+            height: 20%;
+        }
+
+        #section2 .container .wrap .box3 h1 {
+            text-align: center;
+            line-height: 60%;
+        }
+
+        #section2 .container .wrap .box4 {
+            width: 100%;
+            height: 60%;
+            padding: 0 50px;
+        }
+
+        /* --section 2 end-- */
+
+        /* --section 3 start-- */
+        #section3 {
+            width: 100%;
+            height: 100vh;
+            background-color: #844d14;
+            display: flex;
+            position: relative;
+        }
+
+        #section3 .container .wrap {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        #section3 .container .wrap .box {
+            width: 45%;
+            height: 45%;
+        }
+
+        #section3 .container .wrap .theme-1 {
+            background-color: rgb(77, 0, 128);
+            background-image: url("img/vito.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #section3 .container .wrap .theme-2 {
+            padding: 20px;
+        }
+
+        #section3 .container .wrap .theme-2 h1 {
+            border-bottom: rgba(255, 255, 255, 0) solid 5px;
+            width: 120px;
+            transition: 0.5s;
+        }
+
+        #section3 .container .wrap .theme-1:hover~.theme-2 h1 {
+            border-bottom: rgba(255, 255, 255, 1) solid 5px;
+        }
+
+        #section3 .container .wrap .theme-3 {
+            padding: 20px;
+        }
+
+        #section3 .container .wrap .theme-3 h1 {
+            border-bottom: rgba(255, 255, 255, 0) solid 5px;
+            width: 155px;
+        }
+
+        #section3 .container .wrap .theme-4:hover~.theme-3 h1 {
+            border-bottom: rgba(255, 255, 255, 1) solid 5px;
+        }
+
+        #section3 .container .wrap .theme-4 {
+            background-color: rgb(70, 1, 49);
+            background-image: url("img/Michael.jpg");
+            background-size: cover;
+            order: 1;
+            transition: 0.5s;
+        }
+
+        /* --section 3 end-- */
+
+        /* --section 4 start-- */
+        #section4 {
+            width: 100%;
+            height: 50vh;
+            background-color: wheat;
+            background-attachment: fixed;
+            background-image: url("img/wedding.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* --section 4 end-- */
+
+        /* --section 5 start-- */
+        #section5 {
+            width: 100%;
+            height: 100vh;
+            background-color: #4b3d1d;
+            display: flex;
+            position: relative;
+        }
+
+        #section5 .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #section5 .container .wrap {
+            width: 80%;
+            height: 80vh;
+            background-color: rgb(139, 170, 88);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            position: relative;
+        }
+
+        .pic {
+            width: 20%;
+            height: 33.3333%;
+            background-color: steelblue;
+            border: rgb(0, 0, 0) solid 1px;
+            position: relative;
+        }
+
+        .pic p {
+            color: rgb(255, 255, 255);
+            font-size: 32px;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: whitesmoke solid 3px;
+        }
+
+        #pic-1 {
+            background-image: url("img/I.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        #pic-2 {
+            background-image: url("img/II.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #pic-3 {
+            background-image: url("img/III.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .show-box {
+            width: 80%;
+            height: 100%;
+            background-color: black;
+            background-image: url("img/show-box.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        input {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            left: 15px;
+            opacity: 0;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        #pic-btn-1 {
+            bottom: 55px;
+        }
+
+        #pic-btn-2 {
+            bottom: 315px;
+        }
+
+        #pic-btn-3 {
+            bottom: 555px
+        }
+
+        #pic-btn-3:checked~.show-box {
+            background-image: url("img/I.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #pic-btn-2:checked~.show-box {
+            background-image: url("img/II.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #pic-btn-1:checked~.show-box {
+            background-image: url("img/III.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* --section 5 end-- */
+
+        #GoToTop {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(49, 49, 49, 0.3);
+            border-radius: 50%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-image: url("img/top.png");
+            background-size: cover;
+        }
+
+        /* -----main part end----- */
+
+        @media (max-width: 1280px) {
+            .container {
+                width: 960px;
+            }
+
+            /* --section 1 start-- */
+
+            #bg-photo {
+                background-size: contain;
+            }
+
+            /* --section 1 end-- */
+
+            /* --section 5 start-- */
+            #section5 .container .wrap {
+
+                height: 60vh;
+            }
+
+            input {
+                width: 140px;
+                height: 140px;
+                left: 3px;
+            }
+
+            #pic-btn-1 {
+                bottom: 25px;
+            }
+
+            #pic-btn-2 {
+                bottom: 225px;
+            }
+
+            #pic-btn-3 {
+                bottom: 415px
+            }
+
+            /* --section 5 end-- */
+        }
+
+        @media (max-width: 960px) {
+            .container {
+                width: 100%;
+            }
+
+            /* -----header part start----- */
+            #bar {
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .barBox {
+                margin: 0px;
+            }
+
+            #banner {
+                height: calc(100vh - 60px);
+            }
+
+            /* -----header part end----- */
+
+            /* -----nav part start----- */
+            #navbar {
+                background-color: rgba(0, 0, 0, 0);
+            }
+
+            #menu {
+                width: 50px;
+                height: 50px;
+                background-color: rgba(231, 231, 231, 0.4);
+                position: fixed;
+                top: 5px;
+                left: 30px;
+                background-image: url("img/open-menu.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 5px;
+                transition: 0.8s;
+            }
+
+            #menu:hover~ul {
+                display: block; 
+            }
+
+            ul:hover {
+                display: block;
+            }
+
+            ul {
+                margin: 0;
+                width: 30%;
+                height: 10%;
+                background-color: rgb(155, 51, 51);
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 55px;
+                left: 70px;
+                display: none;
+            }
+
+            ul li {
+                width: 100%;
+                list-style: none;
+            }
+
+            ul li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(197, 95, 95);
+                font-size: 30px;
+                font-weight: 900;
+                text-align: center;
+                text-decoration: none;
+                line-height: 80px;
+                color: whitesmoke;
+                padding: 0px 0;
+            }
+
+            /* -----nav part end----- */
+
+            /* --section 1 start-- */
+            #section1 {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(128, 128, 128, 0);
+            }
+
+            #bg-photo {
+                background-image: none;
+                background-color: rgb(0, 0, 0);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            #section1 .container {
+                height: 100vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-between;
+            }
+
+            #section1 .container .wrap {
+                width: 90%;
+                height: 50vh;
+                padding: 50px;
+            }
+
+            #section1 .container .wrap .box2 {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
+
+            #section1 .container .wrap .box2 p {
+                font-size: 16px;
+            }
+
+            #bg-photo-phone {
+                width: 100%;
+                height: 50vh;
+                background-color: rgba(94, 32, 22, 0);
+                background-image: url("img/bg-photo-phone.jpg");
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            /* --section 1 end-- */
+
+            /* --section 2 start */
+            #section2 .container .wrap {
+                height: 100vh;
+                flex-direction: column;
+            }
+
+            #section2 .container .wrap .box1 {
+                width: 100%;
+                height: 50vh;
+            }
+
+            #section2 .container .wrap .box2 {
+                width: 100%;
+                height: 50%;
+            }
+
+            #section2 .container .wrap .box3 {
+                width: 100%;
+                height: 50%;
+            }
+
+            #section2 .container .wrap .box4 {
+                height: 50%;
+            }
+
+            /* --section 2 end-- */
+
+            /* --section 3 start-- */
+            #section3 {
+                height: 200vh;
+            }
+
+            #section3 .container .wrap {
+                height: 200vh;
+            }
+
+            #section3 .container .wrap .box {
+                width: 100%;
+                height: 50vh;
+            }
+
+            #section3 .container .wrap .theme-2 {
+                padding: 50px;
+
+            }
+
+            #section3 .container .wrap .theme-3 {
+                padding: 50px;
+                font-size: 16px;
+                order: 1
+            }
+
+            /* --section 4 start-- */
+            #section4 {
+                height: 100vh;
+                background-position: center;
+            }
+
+            /* --section 4 end-- */
+
+
+            /* --section 5 start-- */
+            #section5 {
+                height: 100vh;
+            }
+
+            #section5 .container .wrap {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .pic {
+                width: 100%;
+                height: 33.3333%;
+            }
+
+            .pic p {
+                font-size: 80px;
+                position: absolute;
+                top: 55%;
+                left: 20%;
+            }
+
+            .show-box {
+                width: 0;
+                height: 0;
+                background-image: none;
+            }
+
+            input {
+                width: 0px;
+                height: 0px;
+            }
+
+            /* --section 5 end-- */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="bar">
+                <div class="barBox"></div>
+            </div>
+        </div>
+        <div id="banner"></div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <div id="menu"></div>
+            <ul>
+                <li><a href="#fake-part1">PLOT</a></li>
+                <li><a href="#fake-part2">DIRECTOR</a></li>
+                <li><a href="#fake-part3">CHARACTER</a></li>
+                <li><a href="#fake-part4">SCENE</a></li>
+                <li><a href="#fake-part5">SERIES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <div id="fake-part1" class="fake-anchor"></div>
+            <div id="bg-photo">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="box1">
+                            <div class="box3">
+                                <h1>Plot</h1>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <p>In New York City, 1945, Michael Corleone, a decorated World War II veteran and son of
+                                Vito Corleone, the Don of the Corleone crime family, is determined to live a life with
+                                his greatest love, Kay Adams, and stay out of the family business. But with the health
+                                and status of his father slowly deteriorating, Michael begins to realize that some
+                                burdens cannot be avoided, and the inevitability of his fate as the patriarch of the
+                                Corleone crime family.</p>
+                        </div>
+                    </div>
+                    <div id="bg-photo-phone"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div id="fake-part2" class="fake-anchor"></div>
+            <div class="container">
+                <div class="wrap">
+                    <div class="box1 theme-1"></div>
+                    <div class="box1 theme-2">
+                        <div class="box2">
+                            <div class="box3">
+                                <h1>Francis Ford Coppola</h1>
+                            </div>
+                            <div class="box4">
+                                <p>Coppola's reputation as a filmmaker was cemented with the release of The Godfather
+                                    (1972). The film revolutionized movie-making in the gangster genre, and was adored
+                                    by the public and critics alike. The Godfather won three Academy Awards: Best
+                                    Picture, Best Actor, and Best Adapted Screenplay (shared with Mario Puzo).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div id="fake-part3" class="fake-anchor"></div>
+            <div class="container">
+                <div class="wrap">
+                    <div class="box theme-1"></div>
+                    <div class="box theme-2">
+                        <h1>Vito Corleone</h1>
+                        <p>Vito oversees a business founded on gambling, bootlegging, prostitution, and union
+                            corruption, but he is known as a kind, generous man who lives by a strict moral code of
+                            loyalty to friends and, above all, family.</p>
+                    </div>
+                    <div class="box theme-4"></div>
+                    <div class="box theme-3">
+                        <h1>Michael Corleone</h1>
+                        <p>Unlike his two older brothers, Michael renounces the Corleone "family business", wanting
+                            instead to lead a more Americanized life. Vito does not want Michael to join the Corleone
+                            criminal empire either, hoping that his favorite son goes into politics.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div id="fake-part4" class="fake-anchor"></div>
+        </section>
+
+        <section id="section5">
+            <div id="fake-part5" class="fake-anchor"></div>
+            <div class="container">
+                <div class="wrap">
+                    <input id="pic-btn-3" type="radio" name="fake-btn">
+                    <input id="pic-btn-2" type="radio" name="fake-btn">
+                    <input id="pic-btn-1" type="radio" name="fake-btn">
+                    <div id="pic-1" class="pic">
+                        <p>PartI</p>
+                    </div>
+                    <div id="pic-2" class="pic">
+                        <p>PartII</p>
+                    </div>
+                    <div id="pic-3" class="pic">
+                        <p>PartIII</p>
+                    </div>
+                    <div class="show-box"></div>
+                </div>
+            </div>
+        </section>
+        <a href="#">
+            <div id="GoToTop"></div>
+        </a>
+    </main>
+
+    <footer>
+        <h3>本網頁僅做練習使用</h3>
+    </footer>
+
+</body>
+
+</html>
