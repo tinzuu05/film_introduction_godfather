@@ -2,6 +2,7 @@
 <h2>前端-</h2>
 <p>HTML、CSS、Javascript，RWD網站前端設計(三種版型-電腦、平板與手機)</p>
 <p>CSS hover效果製作</p>
+<p>套用Parallax網頁效果</p>
 
 Film introduction-Godfather(RWD)
 
